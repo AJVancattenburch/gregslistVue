@@ -20,6 +20,10 @@
           <router-link :to="{ name: 'Cars' }" class="btn text-success lighten-30 selectable text-uppercase">
             Cars
           </router-link>
+
+          <router-link :to="{ name: 'Houses' }" class="btn text-success lighten-30 selectable text-uppercase">
+            Houses
+          </router-link>
         </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->

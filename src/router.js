@@ -20,19 +20,29 @@ const routes = [
   {
     path: '/cars',
     name: 'Cars',
-    component: loadPage('CarsPage')
+    component: loadPage('CarsPage'),
   },
   {
     // NOTE we can create unique endpoints through the use of parameters and ':'
     path: '/cars/:carId',
     name: 'CarDetails',
-    component: loadPage('CarDetailsPage')
+    component: loadPage('CarDetailsPage'),
   },
   {
     path: '/account',
     name: 'Account',
     component: loadPage('AccountPage'),
     beforeEnter: authGuard
+  },
+  {
+    path: '/houses',
+    name: 'Houses',
+    component: loadPage('HousesPage'),
+  },
+  {
+    path: '/houses/:houseId',
+    name: 'HouseDetails',
+    component: loadPage('HouseDetailsPage')
   }
 ]
 
