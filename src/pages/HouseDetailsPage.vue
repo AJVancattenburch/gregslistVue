@@ -4,9 +4,9 @@
 
           <div class="col-8">
               <HouseCard :houseProp="activeHouse" />
-              <h1>{{ activeHouse?.imgUrl }}</h1>
               <h1>{{ activeHouse?.price }}</h1>
               <h2>{{ activeHouse?.description }}</h2>
+              <h3 class="text-center mt-2">Image URL: <u style="color: darkblue;" role="button">{{ activeHouse?.imgUrl }}</u></h3>
           </div>
 
 

@@ -1,19 +1,15 @@
-<!-- NOTE the parameter 'houseId' comes from and refers to the param in our router.js file -->
-    <!-- NOTE here we are setting the route parameter (houseId) to be equal to the unique id of the house we clicked on -->
 <template>
   <div class="rounded elevation-5" v-if="houseProp">
     <router-link :to="{ name: 'HouseDetails', params: { houseId: houseProp?.id } }">
         <img class="img-fluid rounded-top" :src="houseProp?.imgUrl" alt="">
     </router-link>
     <div class="p-2">
-      <h1>{{ houseProp?.levels }}</h1>
+      <h1>{{ houseProp?.description }}</h1>
       <div class="d-flex justify-content-between align-items-center">
           <p>{{ houseProp?.price }}</p>
           <img class="creator-img" :src="houseProp?.creator.picture" alt="">
       </div>
       <div class="text-end py-2">
-          <!-- NOTE FOR UI: if you are going to use an icon as or on a button, you MUST have a title tag that denotes its purpose -->
-          <!-- NOTE only show the button if the person logged in is the person who created it -->
           <button 
           @click="deleteHouse(houseProp?.id)" v-if="houseProp?.creator.id == account?.id" class="btn btn-danger"
           title="Delete House"><i class="mdi mdi-delete"></i> </button>
@@ -31,7 +27,6 @@
   import { logger } from '../utils/Logger.js';
   import { housesService } from '../services/HousesService.js';
   export default {
-    // NOTE we declare props on the child components to be ready to take in data
     props: {
         houseProp: { type: House, required: true }
     },

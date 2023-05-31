@@ -2,7 +2,7 @@
   <div class="container-fluid">
 
       <section class="row p-3 justify-content-end">
-          <button class="col-3 btn btn-warning" data-bs-toggle="modal" data-bs-target="#create-house">Create House
+          <button class="col-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#create-house">Create House
               🛖</button>
       </section>
 
@@ -64,10 +64,165 @@ import HouseForm from "../components/HouseForm.vue";
 
 <style>
 
-  .creator-img {
-    height: 5vh;
-    width: 5vh;
-    border-radius: 50%;
-  }
+body {
+  background-color: #2a2449;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(1) > div {
+  background-color: #571c57;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(2) > div {
+  background-color: #4c1a4c;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(3) > div {
+  background-color: #3d163d;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(4) > div {
+  background-color: #381638;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(5) > div {
+  background-color: #361830;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(6) > div {
+  background-color: #30172b;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(7) > div {
+  background-color: #2e1729;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(8) > div {
+  background-color: #2a1626;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(9) > div {
+  background-color: #291625;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(10) > div {
+  background-color: #291123;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(11) > div {
+  background-color: #1d0e1a;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(12) > div {
+  background-color: #1d0f1a;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(13) > div {
+  background-color: #1c0c18;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(14) > div {
+  background-color: #160b13;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(15) > div {
+  background-color: #160c14;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(16) > div {
+  background-color: #130c12;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(17) > div {
+  background-color: #110910;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(18) > div {
+  background-color: #0c070b;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(19) > div {
+  background-color: #0b070a;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(20) > div {
+  background-color: #050305;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+div.container-fluid > section:nth-child(2) > div:nth-child(21) > div {
+  background-color: #050300;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: .85;
+}
+
+img.img-fluid.rounded-top {
+  padding: .5rem;
+}
+
+.creator-img {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+}
 
 </style>

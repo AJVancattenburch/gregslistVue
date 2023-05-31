@@ -9,34 +9,42 @@
           <div class="modal-body" name="modal-body">
               <div class="mb-3">
                   <label for="price" class="form-label">Price:</label>
-                  <input type="number" v-model="editable.price" min="5" required class="form-control" id="price">
+                  <input type="number" v-model="editable.price" min="0" required class="form-control" id="price">
               </div>
+              <label for="levels" class="form-label">Floors:</label>
               <select v-model="editable.levels" required class="form-select form-select-lg mb-3"
                   aria-label=".form-select-lg example">
                   <option v-for="levels in levels" :key="levels" :value="levels">{{ levels }}
                   </option>
               </select>
+              <label for="bedrooms" class="form-label">How many Bedrooms?</label>
               <select v-model="editable.bedrooms" required class="form-select form-select-lg mb-3"
                   aria-label=".form-select-lg example">
                   <option v-for="bedrooms in bedrooms" :key="bedrooms" :value="bedrooms">{{ bedrooms }}
                   </option>
               </select>
+              <label for="bathrooms" class="form-label">How many Bathrooms?</label>
               <select v-model="editable.bathrooms" required class="form-select form-select-lg mb-3"
                   aria-label=".form-select-lg example">
                   <option v-for="bathrooms in bathrooms" :key="bathrooms" :value="bathrooms">{{ bathrooms }}
                   </option>
               </select>
               <div class="mb-3">
-                  <label for="year" class="form-label">Built in:</label>
-                  <input type="number" v-model="editable.year" min="1980" required class="form-control" id="year">
+                  <label for="year" class="form-label">Year Built?</label>
+                  <input type="number" v-model="editable.year" min="1500" required class="form-control" id="year">
               </div>
               <div class="mb-3">
                   <label for="description" class="form-label">Description:</label>
-                  <input type="text" v-model="editable.description" required class="form-control" id="description">
+                  <textarea type="text" v-model="editable.description" required class="form-control" id="description"></textarea>
               </div>
               <div class="mb-3">
-                  <label for="imgUrl" class="form-label">Image:</label>
-                  <input type="url" v-model="editable.imgUrl" required class="form-control" id="imgUrl">
+                  <label for="imgUrl" class="form-label">Please attach <b>at least one</b> image URL below:</label>
+                  <textarea type="url" v-model="editable.imgUrl" required class="form-control" id="imgUrl">
+                    <input type="url" v-model="editable.imgUrl" class="form-control">
+                    <input type="url" v-model="editable.imgUrl" class="form-control">
+                    <input type="url" v-model="editable.imgUrl" class="form-control">
+                    <input type="url" v-model="editable.imgUrl" class="form-control">
+                  </textarea>
               </div>
           </div>
           <div class="modal-footer">
@@ -61,13 +69,22 @@ export default {
       // NOTE because we need to format an object to POST to the server....this ref will serve as the 'placeholder' object for storing all of the input values from the form
       const editable = ref({})
       return {
+        editable,
+          levels: [
+              '1',
+              '2',
+              '3',
+              '4',
+              '5+'
+          ],
           editable,
           bedrooms: [
               '1',
               '2',
               '3',
               '4',
-              '5'
+              '5',
+              '6+'
           ],
           editable,
           bathrooms: [
@@ -79,7 +96,9 @@ export default {
               '3.5',
               '4',
               '4.5',
-              '5'
+              '5',
+              '5.5',
+              '6+'
           ],
 
           async submitHouseForm() {

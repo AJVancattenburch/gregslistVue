@@ -2,7 +2,7 @@
     <div class="container-fluid">
 
         <section class="row p-3 justify-content-end">
-            <button class="col-3 btn btn-warning" data-bs-toggle="modal" data-bs-target="#create-car">Create Car
+            <button class="col-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#create-car">Create Car
                 🚘</button>
         </section>
 

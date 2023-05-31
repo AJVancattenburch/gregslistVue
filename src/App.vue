@@ -10,13 +10,13 @@
   <footer class="bg-dark text-light">
     Made with 💖 by CodeWorks
   </footer>
-  <!-- NOTE here we bring in the modal component and give it an id....this allows us to reuse this same component with unique id's -->
   <Modal id="create-car">
     <CarForm />
   </Modal>
 </template>
 
 <script>
+
 import { computed } from 'vue'
 import { AppState } from './AppState'
 import Navbar from './components/Navbar.vue'
@@ -31,6 +31,7 @@ export default {
   },
   components: { Navbar, Modal, CarForm }
 }
+
 </script>
 <style lang="scss">
 @import "./assets/scss/main.scss";
