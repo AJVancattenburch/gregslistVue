@@ -3,7 +3,7 @@
 
     <section class="row p-3 justify-content-end">
         <button class="col-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#create-job">Create Job
-            🚘</button>
+            🏢</button>
     </section>
 
     <!-- NOTE v-for is iterating over the jobs computed in the return...we aliased out each one as 'j' -->
