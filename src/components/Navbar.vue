@@ -1,21 +1,34 @@
 <template>
-  <nav class="navbar navbar-nav navbar-expand-lg navbar-dark bg-dark px-3">
-    <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
-      <div class="d-flex flex-column align-items-center">
-        <img alt="logo" src="../assets/img/cw-logo.png" height="45" />
+  <nav class="navbar navbar-nav navbar-expand-lg navbar-dark d-flex bg-dark px-3">
+    <div class="row d-flex justify-space-around text-end navbar-brand w-100">
+      <div class="col-2 text-start">
+        <img class="img-fluid" alt="logo" src="../assets/img/cw-logo.png" height="45" />
       </div>
-    </router-link>
-    <router-link :to="{ name: 'Cars' }" class="btn text-success lighten-30 selectable text-uppercase">
-      Cars
-    </router-link>
-    <router-link :to="{ name: 'Houses' }" class="btn text-success lighten-30 selectable text-uppercase">
-      Houses
-    </router-link>
-    <router-link :to="{ name: 'Jobs' }" class="btn text-success lighten-30 selectable text-uppercase">
-      Jobs
-    </router-link>
+      <div class="col-2">
+        <router-link class="btn text-success lighten-30 selectable text-uppercase" :to="{ name: 'Home' }">
+          Home
+        </router-link>
+      </div>
+      <div class="col-2">
+        <router-link :to="{ name: 'Cars' }" class="btn text-success lighten-30 selectable text-uppercase">
+          Cars
+        </router-link>
+      </div>
+      <div class="col-2">
+        <router-link :to="{ name: 'Houses' }" class="btn text-success lighten-30 selectable text-uppercase">
+          Houses
+        </router-link>
+      </div>
+      <div class="col-2">
+        <router-link :to="{ name: 'Jobs' }" class="btn text-success lighten-30 selectable text-uppercase">
+          Jobs
+        </router-link>
+      </div>
       <!-- LOGIN COMPONENT HERE -->
-      <Login />
+      <div class="col-2">
+        <Login />
+      </div>
+    </div>
 
   </nav>
 </template>
